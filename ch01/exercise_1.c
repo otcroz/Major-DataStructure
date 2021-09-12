@@ -1,4 +1,4 @@
-/*#define _CRT_SECURE_NO_WARNINGS
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 //함수의 위치 바꿔도 결과 똑같이 출력됨
@@ -19,4 +19,4 @@ int sigma(int n)
 	for (r = 0; n > 0; n--)
 		r += n;
 	return r;
-}*/
+}

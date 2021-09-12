@@ -1,4 +1,4 @@
-/*#include <stdio.h>
+#include <stdio.h>
 
 void sub1(int x, int y, int z);
 void sub2(int* x, int* y, int* z);
@@ -29,4 +29,4 @@ void sub1(int x, int y, int z) {
 void sub2(int* x, int* y, int* z) {
 	*y = *y + *z;
 	*z = *z + *x;
-}*/
+}

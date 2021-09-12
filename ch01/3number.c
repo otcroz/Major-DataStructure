@@ -1,4 +1,4 @@
-/*#include <stdio.h>
+#include <stdio.h>
 
 int main(void) {
 	int x, y, z;
@@ -39,4 +39,4 @@ int main(void) {
 	printf("%d %d %d", min, med, max);
 
 	return 0;
-}*/
+}

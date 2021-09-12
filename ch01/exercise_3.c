@@ -1,4 +1,4 @@
-/*#define _CRT_SECURE_NO_WARNINGS
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int IterativeCal(int); //반복 알고리즘 함수
@@ -37,4 +37,4 @@ int RecursiveCal(int n, int sum) //모든 제어 경로에서 값을 반환X?
 	}
 	else
 		return sum;
-}*/
+}

@@ -1,4 +1,4 @@
-/*#define _CRT_SECURE_NO_WARNINGS
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h> //오류
 
 //선택 정렬 함수
@@ -33,4 +33,4 @@ int main(void) {
 	selection_sort(list, 10);
 
 	return 0;
-}*/
+}
