@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void array_concat(int[], int, int[], int, int[]);
+void array_concat(int*, int, int*, int, int*);
 
 int main(void)
 {
@@ -13,10 +13,15 @@ int main(void)
 
 	array_concat(A, n1, B, n2, C);
 
+	//출력
+	for (int i = 0; i < n1 + n2; i++) {
+		printf("%d ", C[i]);
+	}
+
 	return 0;
 }
 
-void array_concat(int a[], int n1, int b[], int n2, int c[])
+void array_concat(int* a, int n1, int* b, int n2, int* c)
 {
 	int i;
 	for (i = 0; i < n1; i++) {
@@ -24,10 +29,5 @@ void array_concat(int a[], int n1, int b[], int n2, int c[])
 	}
 	for (i = n1; i < n1 + n2; i++) {
 		c[i] = b[i - n1];
-	}
-
-	//출력
-	for (int i = 0; i < n1 + n2; i++) {
-		printf("%d ", c[i]);
 	}
 }
