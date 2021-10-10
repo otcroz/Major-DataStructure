@@ -1,0 +1,6 @@
+(a) ab*c*
+(b) -ab+c-d+
+(c) a(-b)*c+
+(d) ab+d*efad*+/+c+
+**(e) ab && c ef>! || ||
+**(f) abc < c d >|| ! && ! ce< ||
