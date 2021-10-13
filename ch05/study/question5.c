@@ -53,10 +53,10 @@ double fRoop(int n, int r) { //반복함수
 	return fRoopRes / r;
 }
 
-int stackEmpty(void)
+/*int stackEmpty(void)
 {
 	if (rn == -1) return 1; else return 0;
-}
+}*/
 
 void push(void)
 {
