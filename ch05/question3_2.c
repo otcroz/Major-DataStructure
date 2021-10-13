@@ -1,23 +1,14 @@
-﻿
-/* 프로그램 5-1 중위식-후위식 변환 : infixtopostfix.c */
-#define _CRT_SECURE_NO_WARNINGS
+﻿#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
 #define MAX_STACK_SIZE 100 /* maximum stack size */
 #define MAX_EXPR_SIZE 100 /* max size of expression */
 
-/*typedef enum {
-	lparen, rparen, plus, minus, times, divide,
-	mod, eos, operand
-} precedence;*/
-
 char expr[MAX_EXPR_SIZE]; /* input string */
 int top = -1;
 
 int stack[MAX_STACK_SIZE];
-/* isp and icp arrays ? index is value of precedence lparen, rparen,
-	plus, minus, times, divide, mode, eos */
 
 void push(char item)
 {
@@ -92,7 +83,7 @@ int convertCharInt(int n)
 	}
 }
 
-char stackSymbol[] = { '(', ')', '+','-','/','*','%',' ','o' }; //char 포인터 배열
+char stackSymbol[] = { '(', ')', '+','-','/','*','%',' ','o' }; //char 배열
 
 void postfix(void) {
 	char symbol;
@@ -109,8 +100,8 @@ void postfix(void) {
 			pop();
 		}
 		else { // 연산자들의 우선 순위 비교..
-			while (isp[convertCharInt(stack[top])] >= icp[token]) //수정
-				print_token(convertCharInt(pop())); //수정
+			while (isp[convertCharInt(stack[top])] >= icp[token]) 
+				print_token(convertCharInt(pop())); 
 			push(stackSymbol[token]);
 		}
 	}
